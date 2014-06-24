@@ -53,7 +53,8 @@
 
 - (void)dealloc
 {
-	//FIXME: Apple crashes on this line, even though BY DEFINITION Apple should not be crashing: [self removeObserver:self forKeyPath:@"showBorder"];
+	//FIXME: Apple crashes on this line, even though BY DEFINITION Apple should not be crashing: 
+	[self removeObserver:self forKeyPath:@"showBorder"];
 	
 	self.SVGImage = nil;
 	
